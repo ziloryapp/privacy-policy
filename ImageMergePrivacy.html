@@ -12,16 +12,40 @@
       background-color: #f4f4f4;
       color: #333;
     }
-    header { background-color: #2980b9; color: white; padding: 15px 20px; text-align: center; }
-    header h1 { margin: 0; font-size: 1.8em; }
-    nav { background-color: #3498db; display: flex; justify-content: center; flex-wrap: wrap; }
-    nav a { color: white; padding: 12px 20px; text-decoration: none; font-weight: bold; transition: background 0.3s; }
-    nav a:hover { background-color: #2980b9; }
-    .container { max-width: 900px; margin: 20px auto; background: white; padding: 25px 30px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-    h2 { color: #2c3e50; margin-top: 25px; }
-    ul { margin-left: 20px; }
-    footer { text-align: center; padding: 15px; margin-top: 30px; background-color: #2980b9; color: white; border-top-left-radius: 10px; border-top-right-radius: 10px; }
-    @media (max-width: 600px) { nav a { flex: 1 0 100%; text-align: center; } }
+    header {
+      background-color: #2980b9;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      background: white;
+      padding: 25px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #2c3e50;
+      margin-top: 25px;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+      background-color: #2980b9;
+      color: white;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
   </style>
 </head>
 <body>
@@ -30,81 +54,72 @@
   <h1>Privacy Policy - Image Merge</h1>
 </header>
 
-<nav>
-  <a href="#data-collection">Data Collection</a>
-  <a href="#purchases">In-App Purchases</a>
-  <a href="#data-use">Data Usage</a>
-  <a href="#refunds">Refund Requests</a>
-  <a href="#deletion">Data Deletion</a>
-</nav>
-
 <div class="container">
-  <section id="data-collection">
+  <section>
     <h2>1. Data Collection</h2>
-    <p>This app does not directly collect your sensitive personal information, such as email or location. However, we use third-party services to analyze app usage and provide advertising or purchase support, including:</p>
+    <p>Our app does not collect sensitive personal information such as name, email, or address directly. However, we use third-party services that may collect limited information for functionality, analytics, advertising, and subscription management:</p>
     <ul>
-      <li>Google Analytics</li>
-      <li>Firebase</li>
-      <li>AdMob</li>
-      <li><strong>RevenueCat</strong> (subscription management, receipt validation, refund processing)</li>
+      <li><strong>AdMob</strong> (Google) – for showing ads and measuring their performance. This may include device identifiers (such as IDFA) for personalized ads.</li>
+      <li><strong>Firebase Analytics & Performance</strong> – to understand app usage, improve performance, and fix issues.</li>
+      <li><strong>Firebase Crashlytics</strong> – to collect crash logs and improve stability.</li>
+      <li><strong>RevenueCat</strong> – to manage in-app purchases, subscriptions, and to process refund requests.</li>
     </ul>
-    <p>These services may collect device information, usage data, and advertising identifiers (such as IDFA), and—where applicable—transaction metadata (e.g., purchase receipts and subscription status) to provide their services. We do not receive or store your full payment card details.</p>
   </section>
 
-  <section id="purchases">
+  <section>
     <h2>2. In-App Purchases & Subscriptions</h2>
-    <p>This app offers in-app purchases and subscription services. Purchase information is processed through the Apple App Store, and we do not directly collect payment information.</p>
-    <p>We use <strong>RevenueCat</strong> to securely manage in-app purchases, subscriptions, and refund requests. RevenueCat may receive purchase receipts and subscription status from Apple in order to provide subscription validation and refund processing. Refund-related usage data may also be shared with Apple via RevenueCat to help Apple make informed refund decisions.</p>
+    <p>Payments are processed securely through the Apple App Store. We do not access or store payment details. Purchase history may be processed by RevenueCat to unlock features, validate subscriptions, and manage refunds.</p>
   </section>
 
-  <section id="data-use">
-    <h2>3. Data Usage</h2>
+  <section>
+    <h2>3. Tracking Transparency (ATT)</h2>
+    <p>On iOS devices, the app may request your permission through Apple’s App Tracking Transparency (ATT) framework to use the device identifier (IDFA) for personalized ads. You can allow or deny this request, and you can change your choice anytime in your device settings.</p>
+  </section>
+
+  <section>
+    <h2>4. Refund Handling</h2>
+    <p>When a refund request is made, RevenueCat may share your consumption data (e.g., whether you used the purchased feature) with Apple to help them decide on the refund. This is done in compliance with Apple’s guidelines and only for refund evaluation purposes.</p>
+  </section>
+
+  <section>
+    <h2>5. Data Usage</h2>
     <p>The collected data is used only for the following purposes:</p>
     <ul>
-      <li>Improving app features and performance</li>
-      <li>Analyzing user behavior to optimize experience</li>
-      <li>Providing personalized advertising services</li>
-      <li>Validating purchases and managing subscriptions</li>
+      <li>Improving app features and stability</li>
+      <li>Analyzing app performance and user engagement</li>
+      <li>Providing and personalizing advertisements</li>
+      <li>Managing purchases, subscriptions, and refunds</li>
     </ul>
   </section>
 
-  <section id="refunds">
-    <h2>4. Refund Requests & Data Sharing</h2>
-    <p>
-      When you request a refund for an in-app purchase, we may share anonymized data about your usage
-      and consumption of the purchased content with Apple. This allows Apple to make an informed
-      decision regarding refund requests. Such data may include how you accessed and interacted with
-      the purchased content, but does not contain personally identifiable information.
-    </p>
-    <p>
-      By making in-app purchases, you consent to this data sharing process, which is conducted
-      strictly in compliance with Apple's policies and only as necessary to process refund requests.
-    </p>
-  </section>
-
-  <section id="deletion">
-    <h2>5. Data Deletion & Contact</h2>
-    <p>If you wish to delete data related to the app or have any privacy concerns, please contact us at:</p>
-    <p><strong>Developer:</strong> ZiloryApp<br>
-       <strong>Email:</strong> help-ziloryapp@outlook.com</p>
+  <section>
+    <h2>6. Your Rights</h2>
+    <p>If you are located in the European Union (GDPR) or California (CCPA), you have the right to:</p>
+    <ul>
+      <li>Request access to the data collected about you</li>
+      <li>Request correction or deletion of your data</li>
+      <li>Opt out of personalized advertising</li>
+    </ul>
+    <p>You can exercise these rights by contacting us at the email below.</p>
   </section>
 
   <section>
-    <h2>6. Children's Privacy</h2>
-    <p>This app is not directed to children under the age of 13. If parents discover that their child has provided personal information, please contact us immediately to delete such information.</p>
+    <h2>7. Children's Privacy</h2>
+    <p>This app is not directed to children under the age of 13. If a parent or guardian believes that their child has provided personal information, please contact us and we will promptly delete it.</p>
   </section>
 
   <section>
-    <h2>7. Policy Updates</h2>
-    <p>We may update this privacy policy from time to time. It is recommended to check periodically to stay informed of the latest terms.</p>
+    <h2>8. Policy Updates</h2>
+    <p>We may update this policy from time to time. Changes will be posted on this page with the updated date.</p>
   </section>
 
   <section>
-    <h2>8. Governing Law</h2>
-    <p>This privacy policy is governed by applicable laws, including GDPR, CCPA, and other relevant regulations.</p>
+    <h2>9. Contact</h2>
+    <p>If you have any questions or privacy concerns, please contact us:</p>
+    <p><strong>Email:</strong> help-ziloryapp@outlook.com</p>
   </section>
 
-  <p>Last Updated: September 29, 2025</p>
+  <p><em>Last Updated: September 29, 2025</em></p>
 </div>
 
 <footer>
